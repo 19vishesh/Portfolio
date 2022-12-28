@@ -1,0 +1,85 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+    --main-font-color: #ff4321;
+}
+
+.workexp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.workpopup {
+    background: var(--primary-color);
+    width: 40rem;
+    height: 30rem;
+    padding: 1.8rem 2.5rem 1rem 2.5rem;
+    position: absolute;
+    top: 10%;
+    transition: all .5s ease-in;
+    color: var(--secondary-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 5rem var(--secondary-color);
+    opacity: 0.9;
+    overflow: scroll;
+}
+
+.open-workpopup {
+    opacity: 1;
+    z-index: 99;
+}
+
+.workpopup #closeworkpopwin {
+    text-align: center;
+    color: #fff;
+}
+
+.exp1, .exp2, .exp3{
+    margin: 1rem 0 2rem;
+}
+
+.workexp hr{
+    width: 80%;
+    opacity: 0.2;
+    color: var(--secondary-color);
+}
+.designation {
+    margin: .1rem 0;
+    color: var(--main-font-color);
+}
+.orgname {
+    font-weight: 500;
+    margin: .1rem 0;
+}
+.workexp .workduration {
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+    font-style: italic;
+    margin: .1rem 0;
+}
+.workexp h3{
+    font-size: smaller;
+    font-style: italic;
+    margin: .1rem 0;
+}
+
+.workpopup .closepop {
+    text-align: center;
+    width: 5rem;
+    height: 3rem;
+    border: 0;
+    border-radius: 2rem;
+    background-color: var(--main-font-color);
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 7rem;
+    margin-left: 2.5rem;
+}
