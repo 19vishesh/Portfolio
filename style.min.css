@@ -1,8 +1,24 @@
-#preloader {
+/* #preloader {
     background: #000106 url(images/loader.gif) no-repeat center center;
     background-size: 30%;
     height: 100vh;
     width: 100%
+} */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.preloader.fade-out {
+    top: -120%;
 }
 
 * {
@@ -15,14 +31,17 @@
 :root {
     --primary-color: #edf2fc;
     --secondary-color: #212121;
-    --main-font-color:#ff4321;
+    --main-font-color: #ff4321;
 }
+
 body {
     background-color: var(--primary-color);
 }
+
 .blur {
     filter: blur(.7rem);
 }
+
 .hero {
     height: 100vh;
     width: 100%;
@@ -162,26 +181,29 @@ span {
 
 
 /* profile-image resizing */
-@media (max-width:1050px){
-    .img-box{
+@media (max-width:1050px) {
+    .img-box {
         width: 30%;
         height: 60%;
     }
 }
-@media (max-width:840px){
-    .img-box{
+
+@media (max-width:840px) {
+    .img-box {
         width: 20%;
         height: 50%;
     }
 }
-@media (max-width:680px){
-    .img-box{
+
+@media (max-width:680px) {
+    .img-box {
         width: 20%;
         height: 40%;
     }
 }
-@media (max-width:590px){
-    .img-box{
+
+@media (max-width:590px) {
+    .img-box {
         display: none;
     }
 }

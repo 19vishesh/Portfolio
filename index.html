@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,10 +12,15 @@
     <link rel="stylesheet" href="style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
+
 <body>
-    <div id="preloader"></div>
+    <!-- <div id="preloader"></div> -->
+    <div class="preloader">
+        <img src="images/loader.gif" alt="">
+    </div>
+
     <div class="hero">
-        
+
         <!-- ***************** NAVIGATION SECTION ***************** -->
         <nav>
             <img src="images/logo.png" alt="logo" class="logo">
@@ -27,13 +33,14 @@
             </ul>
             <img src="images/moon.png" alt="" id="icon">
         </nav>
-        
+
         <!--***************** LEFT SECTION *****************-->
-        <div class="info">  
+        <div class="info">
             <h1><span class="auto-type"></span></h1>
             <h1>I'm <span class="highlight">Vishesh</span> Kumar</h1>
-            <p>To secure a challenging position where <br>I can effectively contribute my skills as a professional <br>possessing
-            competent technical skills. </p>
+            <p>To secure a challenging position where <br>I can effectively contribute my skills as a professional
+                <br>possessing
+                competent technical skills. </p>
             <p style="opacity: 0.6; margin-top:0.5rem">For more info can check out my <span>resume</span> below.</p>
             <div class="download"><a href="download-resume/Vishesh's Resume.pdf" download>Download CV</a></div>
         </div>
@@ -55,10 +62,10 @@
 
     </div>
 
-<!--******************************************************************************************************-->
-<!--******************************************************************************************************-->
-<!--*ANCHOR DIALOG BOX STARTS-->
-<!--******************************************************************************************************-->
+    <!--******************************************************************************************************-->
+    <!--******************************************************************************************************-->
+    <!--*ANCHOR DIALOG BOX STARTS-->
+    <!--******************************************************************************************************-->
 
 
     <!--***************** WORK-EXPERIENCE BOX *****************-->
@@ -109,32 +116,33 @@
                     <li>Understanding and analyzing the company's spacial data</li>
                 </div>
             </div>
-    
+
             <div id="closeworkpopwin">
                 <button type="button" class="closepop" onclick="closeWorkPopup()">Close</button>
             </div>
         </div>
     </section>
-    
+
     <!--***************** HIREME BOX *****************-->
     <section class="hireme">
         <div class="hirepopup" id="hirepopup">
             <h1><span class="highlight">Vishesh</span> Kumar</h1>
             <h2>Contact Me:</h2>
             <ul>
-                <li><i class="fa fa-envelope"></i>  19vishesh@gmail.com</li>
+                <li><i class="fa fa-envelope"></i> 19vishesh@gmail.com</li>
                 <li><i class="fa fa-phone-square"></i> +91-9115514120</li>
             </ul>
             <h2>Follow Me</h2>
-    
+
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/19vishesh/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://twitter.com/19vishesh" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://github.com/19vishesh" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://leetcode.com/19vishesh/" target="_blank"><i class="fas fa-code"></i></a>
-                <a href="https://www.instagram.com/singhvisheshkumar/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/singhvisheshkumar/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
             </div>
-    
+
             <div id="closehirepopwin">
                 <button type="button" class="closepop" onclick="closeHirePopup()">Close</button>
             </div>
@@ -142,10 +150,11 @@
     </section>
 
 
-    
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="dialog.js"></script>
     <script src="script.js"></script>
 
 </body>
+
 </html>
